@@ -1,0 +1,29 @@
+.footer {
+  margin: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 2rem 0 5rem;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .logo {
+    grid-column: span 2;
+    p {
+      margin-top: 1rem;
+      max-width: 30vw;
+    }
+  }
+
+  .footer-AllProducts,
+  .footer-Company,
+  .footer-Support,
+  .footer-Follow {
+    line-height: 1.7rem;
+
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

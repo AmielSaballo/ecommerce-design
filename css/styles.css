@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: black;
+  color: white;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown .dropdownButton {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+.dropdown:hover .dropdownButton {
+  background-color: black;
+  color: white;
+}
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.carousel {
+  max-width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
+  border-radius: 20px;
+}
+
+.slide {
+  width: 100%;
+  position: absolute;
+  transition: all 0.5s;
+  display: flex;
+}
+
+.carousel-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background: none;
+  z-index: 10px;
+  cursor: pointer;
+}
+.carousel-btn:active {
+  transform: scale(1.1);
+}
+
+.carousel-next {
+  top: 45%;
+  right: 1%;
+}
+
+.carousel-prev {
+  top: 45%;
+  left: 1%;
+}
+
+.carousel-phone {
+  background-color: #dce5e2;
+}
+.carousel-phone img {
+  max-height: 500px;
+  transform: translateY(1.5rem);
+}
+
+.carousel-ipad {
+  background-color: #ccdbe2;
+}
+.carousel-ipad img {
+  max-height: 500px;
+  transform: translateY(-1.5rem);
+}
+
+.carousel-pro {
+  background-color: #f1f1f1;
+}
+.carousel-pro img {
+  max-height: 500px;
+}
+
+.description {
+  margin-left: 4rem;
+  margin-top: 8rem;
+}
+.description h1 {
+  font-size: 3.5rem;
+}
+.description p {
+  font-family: "Inter", sans-serif;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.indicator-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: auto;
+  bottom: 5%;
+  left: 18%;
+}
+
+.indicator {
+  width: 12rem;
+  height: 0.3rem;
+  background-color: gray;
+  z-index: 10px;
+  margin-left: 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+.indicator:hover {
+  background-color: black;
+}
+
+.indicator-active {
+  background-color: black;
+}
+
+.product-category {
+  margin: 1rem;
+  height: 100vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  font-family: "Inter", sans-serif;
+}
+
+.laptop-card {
+  text-align: right;
+  grid-column: span 2;
+  grid-row: 1/3;
+  display: flex;
+  vertical-align: middle;
+  position: relative;
+}
+.laptop-card img {
+  height: 30rem;
+  width: auto;
+  transform: translateY(-7rem) translateX(3rem);
+}
+.laptop-card h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Readex Pro", sans-serif;
+}
+.laptop-card div {
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15rem;
+}
+.laptop-card:hover {
+  transition: transform 0.5s ease;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+
+.phone-card {
+  grid-row: 1/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.phone-card img {
+  height: 20rem;
+  width: auto;
+  transform: translateX(4rem);
+}
+.phone-card h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Readex Pro", sans-serif;
+}
+.phone-card div {
+  margin-top: 2rem;
+  width: 16rem;
+}
+.phone-card:hover {
+  transition: transform 0.5s ease;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+
+.tablet-card {
+  grid-row: 1/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.tablet-card img {
+  height: 25rem;
+  width: auto;
+  transform: translateX(-2rem);
+}
+.tablet-card h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Readex Pro", sans-serif;
+}
+.tablet-card div {
+  margin-bottom: 1rem;
+}
+.tablet-card:hover {
+  transition: transform 0.5s ease;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+
+.watch-card {
+  display: flex;
+  overflow: hidden;
+  grid-column: span 2;
+  grid-row: 3/4;
+  position: relative;
+}
+.watch-card img {
+  margin-left: 3rem;
+  height: 40rem;
+  width: auto;
+}
+.watch-card h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Readex Pro", sans-serif;
+}
+.watch-card div {
+  position: absolute;
+  bottom: 30%;
+  right: 0;
+  width: 9rem;
+}
+.watch-card div p {
+  text-align: right;
+  padding-right: 1.5rem;
+}
+.watch-card:hover {
+  transition: transform 0.5s ease;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+
+.top-sellers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 1rem 1rem 1rem 0;
+}
+.top-sellers .card {
+  border-radius: 0;
+}
+.top-sellers img {
+  display: block;
+  width: auto;
+  max-height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+  padding: 1.5rem;
+}
+.top-sellers h2 {
+  margin: 0.5rem 0;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 1.4rem;
+}
+.top-sellers h3 {
+  font-weight: normal;
+}
+.top-sellers p {
+  margin: 0.5rem 0;
+  font-family: "Inter", sans-serif;
+  color: dimgray;
+  font-size: 0.8rem;
+}
+.top-sellers .price {
+  margin-top: auto;
+}
+
+.macbook-pro,
+.galaxy-watch,
+.macbook-air,
+.ipad {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.macbook-pro:hover,
+.galaxy-watch:hover,
+.macbook-air:hover,
+.ipad:hover {
+  transition: transform 0.5s ease;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+
+.light-bulb {
+  background-color: white;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+}
+
+.card-gray {
+  background-color: #f8f9fa;
+  height: 450px;
+  width: auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.card-gray img {
+  width: auto;
+  max-height: 250px;
+  margin-top: 2rem;
+}
+.card-gray p {
+  margin-top: 2rem;
+}
+
+.article-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.article-container .article-image {
+  margin-right: 0.5rem;
+}
+.article-container .article-image img {
+  border-radius: 15px;
+  max-width: 40vw;
+  height: auto;
+}
+.article-container .article-text {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.article-container .article-text:hover {
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+.article-container .learn-more {
+  font-size: 0.8rem;
+  display: none;
+  padding: 0.5rem 0;
+}
+
+.see-articles {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 45%;
+}
+.see-articles:hover {
+  text-decoration: underline;
+}
+
+.search {
+  background-color: white;
+  text-align: center;
+}
+.search h1 {
+  margin: 2rem 0 1rem;
+  padding-top: 3rem;
+  font-size: 2.5rem;
+}
+.search .search-input {
+  width: 50vw;
+  height: 6vh;
+  border: 1px solid gray;
+  border-radius: 30px;
+  padding-left: 2.5em;
+  font-size: 1.3rem;
+  background: url("../images/icons/61d6dadc187c4a394032da6e_Search Icon.svg") no-repeat;
+  background-position: 3%;
+}
+.search .keywords {
+  display: flex;
+  max-width: 55vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5rem auto 0;
+  padding-bottom: 3rem;
+}
+.search .bubble {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  margin: 0.5rem 0.2rem 0;
+}
+
+.newsletter {
+  background-color: white;
+  padding-bottom: 3rem;
+}
+.newsletter .newsletter-container {
+  border-radius: 25px;
+  background-color: #dce5e2;
+  padding-top: 2rem;
+  text-align: center;
+  max-width: 70vw;
+  height: auto;
+  margin: auto;
+}
+.newsletter .newsletter-container h1 {
+  margin-bottom: 1rem;
+}
+.newsletter .newsletter-container p {
+  margin-bottom: 1rem;
+}
+.newsletter .newsletter-container img {
+  width: auto;
+  max-height: 40vh;
+}
+.newsletter .newsletter-container .newsletter-signup {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+  position: relative;
+}
+.newsletter .newsletter-container .newsletter-signup input {
+  width: 25vw;
+  height: 9vh;
+  border: 1px solid black;
+  padding-left: 1em;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-size: 1.3rem;
+}
+.newsletter .newsletter-container .newsletter-signup button {
+  height: 9vh;
+  width: 10vw;
+  border: 1px solid black;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
+  background-color: black;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.footer {
+  margin: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 2rem 0 5rem;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+.footer .logo {
+  grid-column: span 2;
+}
+.footer .logo p {
+  margin-top: 1rem;
+  max-width: 30vw;
+}
+.footer .footer-AllProducts,
+.footer .footer-Company,
+.footer .footer-Support,
+.footer .footer-Follow {
+  line-height: 1.7rem;
+}
+.footer .footer-AllProducts h3,
+.footer .footer-Company h3,
+.footer .footer-Support h3,
+.footer .footer-Follow h3 {
+  margin-bottom: 0.5rem;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Readex Pro", sans-serif;
+}
+
+.body-container {
+  max-width: 1350px;
+}
+
+section {
+  padding: 3rem 0;
+  width: 100vw;
+  text-align: center;
+}
+section h1 {
+  margin: 0.5rem auto;
+  font-size: 2rem;
+}
+section p {
+  margin: auto;
+  width: 35%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.explore {
+  border-radius: 4rem;
+  padding: 0.7rem 2.5rem;
+  background: none;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  border: 0.1rem solid black;
+}
+.explore:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+
+.bg-white {
+  background-color: white;
+}/*# sourceMappingURL=styles.css.map */

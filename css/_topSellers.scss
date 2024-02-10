@@ -1,0 +1,56 @@
+@use "variables" as v;
+
+.top-sellers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 1rem 1rem 1rem 0;
+
+  .card {
+    border-radius: 0;
+  }
+
+  img {
+    display: block;
+    width: auto;
+    max-height: 200px;
+    object-fit: contain;
+    margin: auto;
+    padding: 1.5rem;
+  }
+
+  h2 {
+    margin: 0.5rem 0;
+    font-family: v.$Readex;
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-weight: normal;
+  }
+
+  p {
+    margin: 0.5rem 0;
+    font-family: v.$Inter;
+    color: dimgray;
+    font-size: 0.8rem;
+  }
+
+  .price {
+    margin-top: auto;
+  }
+}
+
+.macbook-pro,
+.galaxy-watch,
+.macbook-air,
+.ipad {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  &:hover {
+    transition: transform 0.5s ease;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+  }
+}

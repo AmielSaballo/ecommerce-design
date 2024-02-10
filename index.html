@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Project</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/icons/6262c57848d71c07c2246ac1_california.svg"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="#"
+          ><img
+            src=""
+            alt=""
+            data-src="images/icons/61d6dadcc329e90e7ba797af_Black Logo.svg"
+        /></a>
+      </div>
+      <div class="navbar-items">
+        <a href="#">ALL PRODUCTS</a>
+        <div class="dropdown">
+          <button class="dropdownButton">
+            SOLUTIONS
+            <img
+              src=""
+              alt=""
+              data-src="images/icons/61dc3933141488d59361259c_DownIco.svg"
+            />
+          </button>
+          <div class="dropdown-content">
+            <div class="dropdown-left">
+              <div class="dropdown-links">
+                <a href="#">Phones</a>
+                <a href="#">Watch</a>
+                <a href="#">Tablet</a>
+                <a href="#">Laptops</a>
+              </div>
+              <section></section>
+            </div>
+            <div class="dropdown-right"></div>
+          </div>
+        </div>
+        <a href="#">ABOUT</a>
+        <a href="#">SUPPORT</a>
+      </div>
+      <div class="navbar-icons">
+        <a href="#"
+          ><img
+            src=""
+            alt=""
+            data-src="images/icons/61d6dadc187c4a394032da6e_Search Icon.svg"
+        /></a>
+        <a href="#"
+          ><img
+            src=""
+            alt=""
+            data-src="images/icons/61d6dadca9325d5d417e54a5_Chart Icon.svg"
+        /></a>
+      </div>
+    </div>
+
+    <div class="carousel">
+      <div class="carousel-phone slide">
+        <div class="description">
+          <h1>The new phones are here take a look.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed,
+            maxime est quod nam iste.
+          </p>
+          <button class="explore">Explore</button>
+        </div>
+        <img
+          src=""
+          alt=""
+          data-src="images/62337475ffd581b880e01bd8_First Slide Image (2).png"
+        />
+      </div>
+      <div class="carousel-ipad slide">
+        <div class="description">
+          <h1>The iPad just got a new purpose!</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+            praesentium ipsa iste quibusdam expedita impedit!
+          </p>
+          <button class="explore">Explore</button>
+        </div>
+        <img
+          src=""
+          alt=""
+          data-src="images/6233747209556434ae5957c3_Second Slide (2) (1).png"
+        />
+      </div>
+      <div class="carousel-pro slide">
+        <div class="description">
+          <h1>Your Pro setup just got better.</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A velit
+            repellendus fuga vel consectetur! Doloribus!
+          </p>
+          <button class="explore">Explore</button>
+        </div>
+        <img
+          src=""
+          alt=""
+          data-src="images/62337473ecc98aeb5c540994_Third Slide (2) (1).png"
+        />
+      </div>
+
+      <div class="indicator-container">
+        <span class="indicator indicator-active" onClick="setSlide(0)"></span>
+        <span class="indicator" onClick="setSlide(1)"></span>
+        <span class="indicator" onClick="setSlide(2)"></span>
+      </div>
+
+      <button class="carousel-next carousel-btn">
+        <img
+          src="images/icons/61f01975c37c7b2a617a193e_Right Arrow Icon.svg"
+          alt=""
+          data-src="images/icons/61f01975c37c7b2a617a193e_Right Arrow Icon.svg"
+        />
+      </button>
+      <button class="carousel-prev carousel-btn">
+        <img
+          src="images/icons/61f017318697c337726355c5_Left Arrow Icon.svg"
+          alt=""
+          data-src="images/icons/61f017318697c337726355c5_Left Arrow Icon.svg"
+        />
+      </button>
+    </div>
+
+    <section>
+      <h1>Shop our latest offers and categories</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi
+        rerum excepturi illo veritatis repellat hic ex omnis ratione. Qui?
+      </p>
+    </section>
+    <div class="product-category">
+      <div class="card laptop-card">
+        <img
+          src=""
+          alt=""
+          data-src="images/6200e438452a412c4c476474_Laptop Image.png"
+        />
+        <div>
+          <p>Laptops</p>
+          <h2>True Laptop Solution</h2>
+        </div>
+      </div>
+      <div class="card phone-card">
+        <img
+          src=""
+          alt=""
+          data-src="images/6200e42ace573a4816993874_Phone Image.png"
+        />
+        <div>
+          <p>Phones</p>
+          <h2>Your day to day life</h2>
+        </div>
+      </div>
+      <div class="card tablet-card">
+        <div>
+          <p>Tablets</p>
+          <h2>Empower your work</h2>
+        </div>
+        <img
+          src=""
+          alt=""
+          data-src="images/6200e41c3e9f3e84eb0c5684_Tablet image.png"
+        />
+      </div>
+      <div class="card watch-card">
+        <img
+          src=""
+          alt=""
+          data-src="images/6200e52185c67c65e123416d_Watch Image.png"
+        />
+        <div>
+          <p>Watch</p>
+          <h2>Not just stylish</h2>
+        </div>
+      </div>
+    </div>
+    <section>
+      <h1>Save on our most sold items</h1>
+      <p>Out new Limited Edition Winter Design BESPOKE 4-door Flex™</p>
+    </section>
+
+    <div class="top-sellers">
+      <div class="macbook-pro">
+        <div class="card macbook-pro-img">
+          <img
+            src=""
+            alt=""
+            data-src="images/62028b0600efe2383e89ce48_Mac Book 4.png"
+          />
+        </div>
+        <div>
+          <h2>MacBook Pro 13</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            blanditiis.
+          </p>
+        </div>
+        <div class="price">
+          <h3>$ 1,200.00 USD</h3>
+        </div>
+      </div>
+      <div class="galaxy-watch">
+        <div class="card galaxy-watch-img">
+          <img
+            src=""
+            alt=""
+            data-src="images/62382e4ee6bfcb408440a226_Smart Galaxy Black Watch.png"
+          />
+        </div>
+        <div>
+          <h2>Smart Galaxy Watch 3</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad qui rem
+            et aliquam autem, delectus maiores voluptas.
+          </p>
+        </div>
+        <div class="price">
+          <h3>$ 199.00 USD</h3>
+        </div>
+      </div>
+      <div class="macbook-air">
+        <div class="card macbook-air-img">
+          <img
+            src=""
+            alt=""
+            data-src="images/62028b1444136bb9173e9b9d_Mac Book 3.png"
+          />
+        </div>
+        <div>
+          <h2>MacBook Air M1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+            veritatis...
+          </p>
+        </div>
+        <div class="price">
+          <h3>$ 1,009.00 USD</h3>
+        </div>
+      </div>
+      <div class="ipad">
+        <div class="card ipad-img">
+          <img
+            src=""
+            alt=""
+            data-src="images/61f14c7ad4a814ec84c8e432_Tablet Image 4-min.png"
+          />
+        </div>
+        <div>
+          <h2>iPad</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+            architecto...
+          </p>
+        </div>
+        <div class="price">
+          <h3>$ 610.00 USD</h3>
+        </div>
+      </div>
+    </div>
+
+    <section class="bg-white">
+      <h1>See the best around here</h1>
+      <p>Out new Limited Edition Winter Design BESPOKE 4-door Flex™</p>
+    </section>
+    <div class="light-bulb">
+      <div class="card-gray">
+        <div>
+          <p>Smart light bulb pack</p>
+          <h2>Latest and greatest</h2>
+        </div>
+        <button class="explore">Explore</button>
+        <img
+          src=""
+          alt=""
+          data-src="images/620669c2bfc23d4e38a7f1ba_Latest.png"
+        />
+      </div>
+      <div class="card-gray">
+        <div>
+          <p>Smart light bulb pack</p>
+          <h2>Best Selling</h2>
+        </div>
+        <button class="explore">Explore</button>
+        <img
+          src=""
+          alt=""
+          data-src="images/6233782a29ea671d428fd9ed_Best Seller.png"
+        />
+      </div>
+      <div class="card-gray">
+        <div>
+          <p>Smart light bulb pack</p>
+          <h2>Every Product</h2>
+        </div>
+        <button class="explore">Explore</button>
+        <img
+          src=""
+          alt=""
+          data-src="images/6233794df39c082c8b6cbee0_Every Product.png"
+        />
+      </div>
+    </div>
+
+    <section>
+      <h1>Ideas have a place here</h1>
+      <p>Out new Limited Edition Winter Design BESPOKE 4-door Flex™</p>
+    </section>
+    <div class="articles">
+      <div class="article-container">
+        <div class="article-image">
+          <img
+            id="blog-image"
+            src=""
+            alt=""
+            data-src="images/620d08005ae7bd10cda7ad66_Blog Image.png"
+          />
+        </div>
+        <div>
+          <p class="article-text">
+            We Make It Easy To Find The Great Design Talent, Easier...
+            <br />
+            <span class="learn-more">Learn more</span>
+          </p>
+          <p class="article-text">
+            Road Design Handbook For the International Road...
+            <br />
+            <span class="learn-more">Learn more</span>
+          </p>
+          <p class="article-text">
+            The Best Kept Secrets About Creative People
+            <br />
+            <span class="learn-more">Learn more</span>
+          </p>
+          <p class="article-text">
+            We Make It Easy To Find The Great Design Talent, Easier...
+            <br />
+            <span class="learn-more">Learn more</span>
+          </p>
+        </div>
+      </div>
+      <a class="see-articles" href="#">See All</a>
+    </div>
+
+    <div class="search">
+      <h1>Looking for anything else?</h1>
+      <div class="search">
+        <input type="text" class="search-input" placeholder="Search keyword" />
+        <div class="keywords">
+          <div class="bubble">
+            <p>iPhone</p>
+          </div>
+          <div class="bubble">
+            <p>Charger</p>
+          </div>
+          <div class="bubble">
+            <p>Gift</p>
+          </div>
+          <div class="bubble">
+            <p>Google Pixel 3</p>
+          </div>
+          <div class="bubble">
+            <p>Keyboard</p>
+          </div>
+          <div class="bubble">
+            <p>13 Pro Max</p>
+          </div>
+          <div class="bubble">
+            <p>iPhone 12</p>
+          </div>
+          <div class="bubble">
+            <p>Laptop</p>
+          </div>
+          <div class="bubble">
+            <p>Mobile</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <div class="newsletter-container">
+        <h1>Never miss a thing</h1>
+        <p>
+          Sign up for texts to be notified about our best offers on the perfect
+          gifts
+        </p>
+        <img
+          src=""
+          alt=""
+          data-src="images/6204dfa9b26f4a3e3bdf8a6a_Sign Up Image (2).png"
+        />
+        <div class="newsletter-signup">
+          <input type="text" placeholder="Your email" />
+          <button>Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="logo">
+        <img
+          src=""
+          alt=""
+          data-src="images/icons/61d6dadcc329e90e7ba797af_Black Logo.svg"
+        />
+        <p>
+          Sign up for texts to be notified about our best offers on the perfect
+          gifts
+        </p>
+      </div>
+      <div class="footer-AllProducts">
+        <h3>All products</h3>
+        <p><a href="#">Phones</a></p>
+        <p><a href="#">Watch</a></p>
+        <p><a href="#">Tablet</a></p>
+        <p><a href="#">Laptops</a></p>
+      </div>
+      <div class="footer-Company">
+        <h3>Company</h3>
+        <p><a href="#">About</a></p>
+        <p><a href="#">Support</a></p>
+      </div>
+      <div class="footer-Support">
+        <h3>Support</h3>
+        <p><a href="#">Style Guide</a></p>
+        <p><a href="#">Licensing</a></p>
+        <p><a href="#">Changelog</a></p>
+        <p><a href="#">Contact</a></p>
+      </div>
+      <div class="footer-Follow">
+        <h3>Follow Us</h3>
+        <p><a href="#">Instagram</a></p>
+        <p><a href="#">Facebook</a></p>
+        <p><a href="#">LinkedIn</a></p>
+        <p><a href="#">Youtube</a></p>
+      </div>
+    </div>
+    <script src="js/carousel.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/articles.js"></script>
+  </body>
+</html>

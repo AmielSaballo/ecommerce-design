@@ -1,0 +1,41 @@
+.article-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .article-image {
+    margin-right: 0.5rem;
+    img {
+      border-radius: 15px;
+      max-width: 40vw;
+      height: auto;
+    }
+  }
+
+  .article-text {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    &:hover {
+      border-bottom: 2px solid black;
+      cursor: pointer;
+    }
+  }
+
+  .learn-more {
+    font-size: 0.8rem;
+    display: none;
+    padding: 0.5rem 0;
+  }
+}
+.see-articles {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 45%;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

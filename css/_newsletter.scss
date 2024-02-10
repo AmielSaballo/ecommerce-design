@@ -1,0 +1,55 @@
+.newsletter {
+  background-color: white;
+  padding-bottom: 3rem;
+  .newsletter-container {
+    border-radius: 25px;
+    background-color: #dce5e2;
+    padding-top: 2rem;
+    text-align: center;
+    max-width: 70vw;
+    height: auto;
+    margin: auto;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    img {
+      width: auto;
+      max-height: 40vh;
+    }
+
+    .newsletter-signup {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 3rem;
+      position: relative;
+
+      input {
+        width: 25vw;
+        height: 9vh;
+        border: 1px solid black;
+        padding-left: 1em;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        font-size: 1.3rem;
+      }
+
+      button {
+        height: 9vh;
+        width: 10vw;
+        border: 1px solid black;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        color: white;
+        background-color: black;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
