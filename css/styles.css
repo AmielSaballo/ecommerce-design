@@ -370,6 +370,12 @@
   transform: scale(1.02);
 }
 
+@media (max-width: 768px) {
+  .product-category {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .top-sellers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -422,6 +428,12 @@
   transform: scale(1.02);
 }
 
+@media (max-width: 768px) {
+  .top-sellers {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .light-bulb {
   background-color: white;
   display: grid;
@@ -448,6 +460,12 @@
   margin-top: 2rem;
 }
 
+@media (max-width: 768px) {
+  .light-bulb {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .article-container {
   display: flex;
   justify-content: center;
@@ -571,6 +589,23 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .newsletter-signup {
+    flex-direction: column;
+  }
+  .newsletter-signup input {
+    width: 70vw !important;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0px !important;
+  }
+  .newsletter-signup button {
+    width: 70vw !important;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0px !important;
+  }
+}
 .footer {
   margin: 0 1rem;
   display: grid;
@@ -601,6 +636,22 @@
   margin-bottom: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .logo p {
+    font-size: 0.75rem;
+    max-width: 50vw;
+  }
+  .footer-AllProducts,
+  .footer-Company,
+  .footer-Support,
+  .footer-Follow {
+    margin-top: 1.5rem;
+  }
+}
 body {
   background-color: #f8f9fa;
   font-family: "Readex Pro", sans-serif;

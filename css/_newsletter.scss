@@ -53,3 +53,23 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .newsletter-signup {
+    flex-direction: column;
+
+    input {
+      width: 70vw !important;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 0px !important;
+    }
+
+    button {
+      width: 70vw !important;
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-top-right-radius: 0px !important;
+    }
+  }
+}

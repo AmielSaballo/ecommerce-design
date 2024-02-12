@@ -27,3 +27,24 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+      p {
+        font-size: 0.75rem;
+        max-width: 50vw;
+      }
+    }
+  }
+
+  .footer-AllProducts,
+  .footer-Company,
+  .footer-Support,
+  .footer-Follow {
+    margin-top: 1.5rem;
+  }
+}

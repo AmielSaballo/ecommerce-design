@@ -54,3 +54,10 @@
     transform: scale(1.02);
   }
 }
+
+@media (max-width: 768px) {
+  .top-sellers {
+    display: flex;
+    flex-direction: column;
+  }
+}
