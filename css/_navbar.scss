@@ -4,6 +4,7 @@
   a {
     color: black;
     text-decoration: none;
+    font-weight: 600;
   }
   ul {
     display: flex;
@@ -21,6 +22,11 @@
     display: flex;
     width: 45vw;
     justify-content: space-around;
+
+    .navbar-dropdown {
+      font-weight: 600;
+      cursor: pointer;
+    }
   }
 
   .navbar-icons {
@@ -31,49 +37,75 @@
 }
 
 .dropdown-content {
+  background-color: white;
   display: flex;
-  height: 100vh;
+  height: 80vh;
   justify-content: space-around;
   margin-top: 1rem;
   padding-top: 2rem;
   border-top: 1px solid gray;
+  visibility: hidden;
+  position: absolute;
+  width: 100vw;
+  z-index: 100;
+
+  .dropdown-category-wrapper {
+    height: 60vh;
+    position: relative;
+  }
 
   .dropdown-category {
     display: flex;
     margin: 0 auto;
-    height: 60vh;
-    flex-basis: 35vw;
+    height: fit-content;
+    width: 50vw;
+    flex-grow: 1;
     flex-wrap: wrap;
-    position: relative;
+    vertical-align: middle;
+    justify-content: space-around;
 
-    .dropdown-phone,
-    .dropdown-laptop,
-    .dropdown-watch,
-    .dropdown-tablet {
+    .dropdown-gadget {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-evenly;
-      flex-basis: 40%;
       flex-grow: 1;
-      transition: all 0.5s ease;
+      flex-basis: 50%;
+      margin: 1.5rem 0;
+      padding: 1rem;
+
+      .dropdown-icon {
+        background-color: #f8f9fa;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        img {
+          display: block;
+          margin: 1.3rem auto;
+          height: 1.5rem;
+          width: auto;
+        }
+      }
 
       &:hover {
         cursor: pointer;
-        background-color: red;
       }
     }
+  }
 
-    .dropdown-category-desc {
-      position: absolute;
-      bottom: 0;
-      width: 50vw;
-      font-size: 0.9rem;
-    }
+  .dropdown-category-desc {
+    // margin-left: 2rem;
+    width: 45vw;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    left: 8%;
   }
 
   .dropdown-editorial {
     border-left: 1px solid gray;
     padding-left: 3rem;
     height: 70vh;
+    cursor: pointer;
     img {
       width: auto;
       height: 20rem;
