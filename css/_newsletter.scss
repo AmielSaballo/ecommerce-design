@@ -55,21 +55,42 @@
 }
 
 @media (max-width: 768px) {
+  .newsletter-container {
+    max-width: 90vw !important;
+    img {
+      height: 20vh;
+    }
+
+    p {
+      width: 60vw;
+      margin: auto;
+    }
+  }
   .newsletter-signup {
     flex-direction: column;
 
     input {
       width: 70vw !important;
+      height: 6vh !important;
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
       border-bottom-left-radius: 0px !important;
+      margin: auto;
+      text-align: center;
+      padding-left: 0;
+      font-size: 1.3rem !important;
+      padding-left: 0 !important;
     }
 
     button {
       width: 70vw !important;
+      height: 6vh !important;
       border-bottom-right-radius: 25px;
       border-bottom-left-radius: 25px;
       border-top-right-radius: 0px !important;
+      margin: auto;
+      text-align: center;
+      font-size: 1.3rem !important;
     }
   }
 }
