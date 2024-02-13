@@ -240,6 +240,50 @@
   background-color: black;
 }
 
+@media (max-width: 768px) {
+  .carousel {
+    height: 68vh;
+    margin: 0 1rem;
+    border-radius: 30px;
+  }
+  .carousel .description {
+    margin: 3rem 1rem 0;
+    text-align: center;
+  }
+  .carousel .description h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .carousel .description p {
+    font-size: 1em;
+    text-align: center;
+    width: 50vw;
+    margin: 0.5rem auto;
+  }
+  .carousel .explore {
+    margin: auto;
+    width: 50%;
+    margin-top: 1rem;
+  }
+  .carousel .slide {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .carousel .indicator-container {
+    left: 0;
+    bottom: 10%;
+  }
+  .carousel .indicator {
+    max-width: 5rem;
+  }
+  .carousel .carousel-btn {
+    top: auto;
+    bottom: 1%;
+  }
+  .carousel-next {
+    bottom: 5%;
+  }
+}
 .product-category {
   margin: 1rem;
   height: 100vh;

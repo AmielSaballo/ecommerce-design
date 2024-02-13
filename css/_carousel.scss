@@ -103,3 +103,56 @@
 .indicator-active {
   background-color: black;
 }
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 68vh;
+    margin: 0 1rem;
+    border-radius: 30px;
+
+    .description {
+      margin: 3rem 1rem 0;
+      text-align: center;
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1em;
+        text-align: center;
+        width: 50vw;
+        margin: 0.5rem auto;
+      }
+    }
+
+    .explore {
+      margin: auto;
+      width: 50%;
+      margin-top: 1rem;
+    }
+
+    .slide {
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .indicator-container {
+      left: 0;
+      bottom: 10%;
+    }
+
+    .indicator {
+      max-width: 5rem;
+    }
+
+    .carousel-btn {
+      top: auto;
+      bottom: 1%;
+    }
+  }
+
+  .carousel-next {
+    bottom: 5%;
+  }
+}
