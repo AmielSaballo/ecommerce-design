@@ -6,7 +6,7 @@ const blogs = [
   "images/623376b57925d763656caec2_Blog Image.png",
 ];
 
-const blogImg = document.getElementById("blog-image");
+const blogImg = document.querySelector(".default-article-image");
 const articles = document.querySelectorAll(".article-text");
 const learn = document.querySelectorAll(".learn-more");
 
@@ -15,11 +15,17 @@ articles.forEach((article, i) => {
     learn[i].style.display = "block";
 
     blogImg.src = blogs[i];
+
+    // blogImg[i + 1].classList.add("article-active");
+    // blogImg[0].classList.remove("article-active");
   });
 
   article.addEventListener("mouseout", () => {
     learn[i].style.display = "none";
 
     blogImg.src = blog;
+
+    // blogImg[i + 1].classList.remove("article-active");
+    // blogImg[0].classList.add("article-active");
   });
 });
