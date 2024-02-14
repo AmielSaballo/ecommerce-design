@@ -66,6 +66,12 @@
     .article {
       text-align: center;
       flex-direction: column;
+      opacity: 0.6;
+      transition: all 0.5s ease;
+
+      &:hover {
+        opacity: 1;
+      }
 
       .article-image-container {
         margin: auto;

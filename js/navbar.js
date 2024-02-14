@@ -25,3 +25,29 @@ gadgets.forEach((gadget, i) => {
     iconImg[0].style.filter = "invert(0)";
   });
 });
+
+const mobileDropdown = document.querySelector(".mobile-dropdown");
+
+function toggleDropdown() {
+  if (mobileDropdown.classList.contains("mobile-navbar-active")) {
+    mobileDropdown.classList.remove("mobile-navbar-active");
+  } else {
+    mobileDropdown.classList.add("mobile-navbar-active");
+  }
+}
+
+const mobileSolutionToggle = document.querySelector(".mobile-solutions-toggle");
+const mobileSolutionDropdown = document.querySelector(
+  ".mobile-solutions-dropdown"
+);
+
+mobileSolutionToggle.addEventListener("click", () => {
+  if (
+    mobileSolutionDropdown.style.display == "none" ||
+    mobileSolutionDropdown.style.display == ""
+  ) {
+    mobileSolutionDropdown.style.display = "block";
+  } else {
+    mobileSolutionDropdown.style.display = "none";
+  }
+});
