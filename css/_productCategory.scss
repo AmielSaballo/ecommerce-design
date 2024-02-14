@@ -144,7 +144,7 @@
     position: absolute;
     bottom: 30%;
     right: 0;
-    width: 9rem;
+    width: 10vw;
 
     p {
       text-align: right;
@@ -170,5 +170,56 @@
   .product-category {
     display: flex;
     flex-direction: column;
+    height: 170vh;
+
+    img {
+      height: 15rem;
+      transform: none;
+    }
+
+    .card {
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .laptop-card {
+      img {
+        height: 18rem;
+        transform: translate(10%, -45%);
+      }
+    }
+
+    .phone-card {
+      height: 90vh;
+
+      img {
+        height: 50vh;
+        transform: translate(15%, 0%);
+      }
+    }
+
+    .tablet-card {
+      height: 80vh;
+
+      img {
+        height: 50vh;
+        transform: translateX(-10%);
+      }
+    }
+
+    .watch-card {
+      height: 25vh;
+      img {
+        height: 25rem;
+        transform: translate(-15%, 5%);
+      }
+      div {
+        width: 25vw;
+        h2 {
+          width: 30vw;
+        }
+      }
+    }
   }
 }

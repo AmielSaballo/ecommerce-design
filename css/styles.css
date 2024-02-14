@@ -402,7 +402,7 @@
   position: absolute;
   bottom: 30%;
   right: 0;
-  width: 9rem;
+  width: 10vw;
 }
 .watch-card div p {
   text-align: right;
@@ -418,6 +418,45 @@
   .product-category {
     display: flex;
     flex-direction: column;
+    height: 170vh;
+  }
+  .product-category img {
+    height: 15rem;
+    transform: none;
+  }
+  .product-category .card h2 {
+    font-size: 1.5rem;
+  }
+  .product-category .laptop-card img {
+    height: 18rem;
+    transform: translate(10%, -45%);
+  }
+  .product-category .phone-card {
+    height: 90vh;
+  }
+  .product-category .phone-card img {
+    height: 50vh;
+    transform: translate(15%, 0%);
+  }
+  .product-category .tablet-card {
+    height: 80vh;
+  }
+  .product-category .tablet-card img {
+    height: 50vh;
+    transform: translateX(-10%);
+  }
+  .product-category .watch-card {
+    height: 25vh;
+  }
+  .product-category .watch-card img {
+    height: 25rem;
+    transform: translate(-15%, 5%);
+  }
+  .product-category .watch-card div {
+    width: 25vw;
+  }
+  .product-category .watch-card div h2 {
+    width: 30vw;
   }
 }
 .top-sellers {
@@ -764,4 +803,10 @@ section p {
 
 .bg-white {
   background-color: white;
+}
+
+@media (max-width: 768px) {
+  section p {
+    width: 60vw;
+  }
 }/*# sourceMappingURL=styles.css.map */
